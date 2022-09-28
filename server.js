@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 app.get("/", (req, res) => {
+	console.log("working");
 	res.json({
 		port: process.env.PORT,
 		success: true,
